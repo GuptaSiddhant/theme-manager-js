@@ -1,10 +1,11 @@
+import WebFont from "webfontloader";
 import { SML, ThemeColors, ThemeObject } from "./typeDefinitions";
 import { zIndices, shadows } from "./common";
 import { getColorTint, generateThemeCSS, generateGlobalCSS } from "./utilities";
-import WebFont from "webfontloader";
+import { DefaultTheme } from './theme';
 
 // Theme Object
-export const Theme = {
+const Theme = {
   // Radius
   radius: (type: SML = "md") => `var(--radius-${type})`,
 
@@ -34,8 +35,8 @@ export const Theme = {
  * Function to set or update theme.
  * The function wirtes global/root CSS which then can be accessed by any component.
  */
-export function setTheme(
-  theme: ThemeObject,
+function setTheme(
+  theme: ThemeObject = DefaultTheme,
   enableDarkMode: boolean = false,
   globalCSS: string = ""
 ) {
@@ -47,4 +48,5 @@ export function setTheme(
   generateGlobalCSS(Theme, globalCSS);
 }
 
+export { ThemeObject, Theme, setTheme };
 export default Theme;

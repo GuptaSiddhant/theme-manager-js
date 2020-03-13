@@ -1,6 +1,6 @@
 {
   "name": "@guptasiddhant/theme-manager-js",
-  "version": "1.0.0-ALPHA.0",
+  "version": "1.0.0-ALPHA.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
