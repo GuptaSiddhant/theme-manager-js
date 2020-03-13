@@ -205,7 +205,7 @@ export const generateGlobalCSS = (Theme: any, globalCss: string) => {
       padding: 0;
       width: 100vw;
       height: 100vh;
-      font-family: ${Theme.fontName()}, Muli, sans-serif;
+      font-family: Muli, sans-serif;
       font-size: 14px;
       color: ${Theme.colorText()};
     }
