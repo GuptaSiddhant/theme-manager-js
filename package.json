@@ -1,6 +1,6 @@
 {
   "name": "@guptasiddhant/theme-manager-js",
-  "version": "1.0.0-ALPHA.1",
+  "version": "1.0.0-SNAPSHOT.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -25,7 +25,8 @@
     "react",
     "style",
     "theme",
-    "css", "darkMode"
+    "css",
+    "darkMode"
   ],
   "author": "Siddhant Gupta <me@guptasiddhant.com>",
   "license": "MIT",
