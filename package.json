@@ -17,7 +17,7 @@
     "watch": "rollup -cw",
     "cleanup": "rm -r dist",
     "prepublishOnly": "npm run build",
-    "postpublish": "npm run cleanup && git push && git push --tags && rm -R dist",
+    "postpublish": "npm run cleanup && git push && git push --tags",
     "snapshot": "npm version prerelease --preid=SNAPSHOT && npm publish --access=public --tag=SNAPSHOT"
   },
   "keywords": [
